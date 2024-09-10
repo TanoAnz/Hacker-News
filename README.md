@@ -1,4 +1,4 @@
-e5dzrRx vevexr\  aAd  qad1
+
 # Hacker News Angular 17.3.7 Application
 
 ## Descrizione
