@@ -1,0 +1,8 @@
+
+<div class="card" *ngIf="news && news.title && news.url && news.by">
+  <div class="card-details">
+    <p class="text-title" >{{ news.title }}</p>
+    <p class="text-body">&#64;{{ news.by }} {{ news.time ? convertDate() : '' }}</p>
+  </div>
+  <button class="card-button" (click)="onClick()">Link</button>
+</div>

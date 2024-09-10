@@ -1,0 +1,10 @@
+<h1 class="title">HACKER NEWS</h1>
+<div *ngFor="let i of recordPage" class="card-container">
+<app-card *ngIf="i" [id]="i"></app-card>
+</div>
+
+<div class="load">
+<button (click)="onClick()">
+  <span>View more</span>
+</button>
+</div>

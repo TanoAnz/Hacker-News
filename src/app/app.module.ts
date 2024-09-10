@@ -3,17 +3,25 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { CardComponent } from './home/card/card.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    DatePipe
   ],
   bootstrap: [AppComponent]
 })
