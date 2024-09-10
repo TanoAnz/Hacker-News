@@ -8,7 +8,7 @@ Questa applicazione Angular visualizza l'elenco delle ultime news recuperate dal
 ## Funzionalità
 
 - **Visualizzazione News:** L'applicazione visualizza il titolo, il link e la data delle ultime news.
-- **Caricamento Dinamico:** Carica inizialmente le prime 10 news e permette di caricare altre 10 news alla volta tramite il pulsante "Load more".
+- **Caricamento Dinamico:** Carica inizialmente le prime 10 news e permette di caricare altre 10 news alla volta tramite il pulsante "View More".
 - **Gestione delle API:** Utilizza le API di Hacker News per recuperare l'elenco degli ID delle news e i dettagli di ciascuna news.
 
 ## API Utilizzate
