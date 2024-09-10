@@ -1,27 +1,24 @@
-# HackerNews
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+# Hacker News Angular 17.3.7 Application
 
-## Development server
+## Descrizione
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Questa applicazione Angular visualizza l'elenco delle ultime news recuperate dall'API di Hacker News. Alla startup, l'applicazione mostra le prime 10 news, inclusi titolo, link e data. Gli utenti possono caricare ulteriori news tramite un pulsante "Load more", che visualizza le successive 10 news.
 
-## Code scaffolding
+## Funzionalità
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Visualizzazione News:** L'applicazione visualizza il titolo, il link e la data delle ultime news.
+- **Caricamento Dinamico:** Carica inizialmente le prime 10 news e permette di caricare altre 10 news alla volta tramite il pulsante "Load more".
+- **Gestione delle API:** Utilizza le API di Hacker News per recuperare l'elenco degli ID delle news e i dettagli di ciascuna news.
 
-## Build
+## API Utilizzate
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Recupero degli ID delle Ultime News:**
+   - **Endpoint:** `https://hacker-news.firebaseio.com/v0/newstories.json`
+   - **Metodo:** GET
+   - **Descrizione:** Restituisce un array di ID delle ultime news (circa 500 elementi).
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. **Recupero dei Dettagli della News:**
+   - **Endpoint:** `https://hacker-news.firebaseio.com/v0/item/{id}.json`
+   - **Metodo:** GET
+   - **Descrizione:** Restituisce i dettagli di una news, inclusi titolo, link e data.
