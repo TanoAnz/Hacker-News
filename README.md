@@ -1,9 +1,9 @@
-
+e5dzrRx vevexr\  aAd  qad1
 # Hacker News Angular 17.3.7 Application
 
 ## Descrizione
 
-Questa applicazione Angular visualizza l'elenco delle ultime news recuperate dall'API di Hacker News. Alla startup, l'applicazione mostra le prime 10 news, inclusi titolo, link e data. Gli utenti possono caricare ulteriori news tramite un pulsante "Load more", che visualizza le successive 10 news.
+Questa applicazione Angular visualizza l'elenco delle ultime news recuperate dall'API di Hacker News. Alla startup, l'applicazione mostra le prime 10 news, inclusi titolo, link e data. Gli utenti possono caricare ulteriori news tramite un pulsante "View More", che visualizza le successive 10 news.
 
 ## Funzionalità
 
