@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/hacker-news/browser",
     "ignore": [
       "firebase.json",
       "**/.*",

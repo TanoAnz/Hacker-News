@@ -8,7 +8,7 @@ import { news } from '../model/news.model';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
-  id: number[]= [];
+  ids: number[]= [];
   recordPage= [0,1,2,3,4,5,6,7,8,9];
 
   constructor(private dataService: DataService){}
@@ -20,8 +20,8 @@ export class HomeComponent implements OnInit{
     this.dataService.getDati().subscribe({
       next: (data) => {
         
-        this.id= data;
-        console.log(this.id)
+        this.ids= data;
+        console.log(this.ids)
       },
       error: (err) => {
         console.error("Errore nel caricamento dei 500 id", err)

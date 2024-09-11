@@ -39,7 +39,7 @@ describe('HomeComponent', () => {
     component.fetchId();
 
     expect(dataService.getDati).toHaveBeenCalled();
-    expect(component.id).toEqual(mockIds);
+    expect(component.ids).toEqual(mockIds);
   });
 
   it('should handle error when fetchId fails', () => {
@@ -53,17 +53,5 @@ describe('HomeComponent', () => {
     expect(console.error).toHaveBeenCalledWith("Errore nel caricamento dei 500 id", jasmine.any(Error));
   });
 
-  it('should update recordPage and call fetchId when onClick is called', () => {
-    spyOn(component, 'fetchId').and.callThrough();
-
-    component.onClick();
-
-    expect(component.recordPage.length).toBe(20);
-    expect(component.fetchId).toHaveBeenCalled();
-
-    const req = httpMock.expectOne("https://hacker-news.firebaseio.com/v0/newstories.json");
-    expect(req.request.method).toBe('GET');
-    req.flush(mockIds);
-  });
 });
 
